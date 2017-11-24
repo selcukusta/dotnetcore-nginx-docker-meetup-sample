@@ -1,0 +1,7 @@
+﻿@model List<app.Models.Member>
+@addTagHelper app.CustomTagHelpers.ProfileInformationTagHelper, app
+<br />
+@foreach(var item in Model)
+{    
+    <profile-information info="@item" />
+}

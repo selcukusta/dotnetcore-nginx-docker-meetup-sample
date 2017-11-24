@@ -1,0 +1,14 @@
+version: "2"
+services:
+  sampleapp:
+    image: selcukusta/sample-web:1.0.0
+    ports:
+      - '1905:1905'
+  proxy:
+    image: selcukusta/sample-proxy:1.0.0
+    ports:
+      - '80:80'
+    depends_on:
+      - sampleapp
+    links:
+      - sampleapp:sampleapp

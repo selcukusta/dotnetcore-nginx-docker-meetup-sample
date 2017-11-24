@@ -1,0 +1,3 @@
+https://www.nginx.com/blog/nginx-caching-guide/
+http://nginx.org/en/docs/varindex.html
+https://github.com/Azure/azure-quickstart-templates/tree/master/docker-simple-on-ubuntu
